@@ -5,7 +5,7 @@ Here you can find your favourite car for your tour with a reasonable cost and qu
 ## Installation
 
 - Clone this Repo and Run
-## npm start
+## npm install
 
 
 #### Live Site link: https://carrenatal.netlify.app/
