@@ -4,3 +4,9 @@
   grid-row-gap: 25px;
   grid-column-gap: 20px;
 }
+
+@media only screen and (max-width: 720px) {
+  .tiels {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

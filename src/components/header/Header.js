@@ -10,6 +10,7 @@ const Header = () => {
             <div className="row">
               <div className="col-9">
                 <h1>Rent Your Favourite Car, Anytime</h1>
+                <h6>For a Whole Day Long... </h6>
                 <h5>
                   <i className="fas fa-sign  icons  "></i> Easy & Fast{" "}
                 </h5>

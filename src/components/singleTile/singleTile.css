@@ -10,11 +10,32 @@
   border-radius: 50%;
 }
 
-.singleTile p {
+.singleTile h5 {
+  border-left: rgba(255, 99, 71, 0.698) 1px solid;
+  border-top: rgba(255, 99, 71, 0.698) 1px solid;
+
+  padding: 5px 6px;
+  transition: all 0s;
+}
+
+.singleTile h5:hover {
+  /* background-color: tomato;
+  color: rgb(0, 0, 0); */
+
+  border-right: rgba(255, 99, 71, 0.698) 1px solid;
+  border-bottom: rgba(255, 99, 71, 0.698) 1px solid;
+  border-left: none;
+  border-top: none;
+}
+
+.info {
   display: flex;
   justify-content: space-between;
 }
 
+.info:nth-last-child(2) {
+  padding-bottom: 20px;
+}
 .singleTile .img {
   text-align: center;
   padding-bottom: 10px;

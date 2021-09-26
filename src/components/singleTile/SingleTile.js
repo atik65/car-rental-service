@@ -1,7 +1,7 @@
 import React from "react";
 import "./singleTile.css";
 
-const SingleTile = ({ car }) => {
+const SingleTile = ({ car, handleCart }) => {
   const { color, cost, id, img, name, speed } = car;
   return (
     <>
@@ -9,16 +9,18 @@ const SingleTile = ({ car }) => {
         <div className="img">
           <img className="singleTileImg " src={img} alt="" />
         </div>
-        <p>
+        <div className="info">
           <h5> {name} </h5>
           <h6 className="pe-1"> Cost: {cost} Taka </h6>
-        </p>
-        <p>
+        </div>
+        <div className="info">
           <span> Speed: {speed} km/h </span>
           <span className="pe-1"> Color: {color} </span>
-        </p>
+        </div>
         <div>
-          <button className="rentBtn"> Add to Rent</button>
+          <button onClick={() => handleCart(id)} className="rentBtn">
+            Add to Rent
+          </button>
         </div>
       </div>
     </>
