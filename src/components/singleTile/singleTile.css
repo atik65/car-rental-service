@@ -1,0 +1,35 @@
+.singleTile {
+  background-color: rgba(0, 0, 0, 0.198);
+  padding: 15px;
+  border: 1px solid rgba(246, 125, 77, 0.527);
+}
+
+.singleTileImg {
+  width: 150px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.singleTile p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.singleTile .img {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.rentBtn {
+  background-color: rgba(246, 125, 77, 0.993);
+  transition: all 0.5s;
+  padding: 5px 5px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.rentBtn:hover {
+  background-color: rgba(248, 131, 87, 0.993);
+}

@@ -1,0 +1,46 @@
+.header {
+  color: #fff;
+}
+
+.innerHeader {
+  background-color: rgba(0, 0, 0, 0.582);
+  padding-bottom: 30px;
+}
+.innerHeader h1 {
+  padding: 20px 0;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.innerHeader h5 {
+  padding: 5px;
+  border-radius: 3px;
+  padding-right: 20px;
+  display: inline-block;
+  transition: all 0.2s;
+  font-weight: 400;
+}
+
+.innerHeader h5:hover {
+  background-color: rgba(246, 125, 77, 0.993);
+
+  color: black;
+}
+
+.innerHeader p {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgba(251, 155, 117, 0.993);
+
+  color: black;
+  padding: 0 10px;
+}
+
+.header .icons {
+  /* color: lightgreen; */
+  color: rgba(246, 125, 77, 0.993);
+}
+
+h5:hover .icons {
+  color: rgb(0, 0, 0);
+}
