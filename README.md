@@ -1,15 +1,11 @@
 # This is a Car Renatal Website 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here you can find your favourite car for your tour with a reasonable cost and quality service
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Clone this Repo and Run
+## npm start
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
