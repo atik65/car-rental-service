@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./main.css";
 import TileContainer from "../tileContainer/TileContainer";
 import Cart from "../cartSection/Cart";
-
+import { addToDb, getDb } from "../localStorage";
 const Main = () => {
   const [cars, setCars] = useState([]);
   const [filterdCar, setFilterdCar] = useState([]);
@@ -13,8 +13,23 @@ const Main = () => {
       .then((data) => setCars(data));
   }, []);
 
+  useEffect(() => {
+    if (cars.length) {
+      const cartItem = JSON.parse(getDb());
+
+      const filtered = [];
+      for (const key in cartItem) {
+        const car = cars.find((car) => car.id === Number(key));
+        filtered.push(car);
+      }
+
+      setFilterdCar(filtered);
+    }
+  }, [cars]);
+
   const handleCart = (id) => {
     const car = cars.find((car) => car.id === id);
+    addToDb(id);
     setFilterdCar([...filterdCar, car]);
   };
 

@@ -18,7 +18,7 @@ const SingleTile = ({ car, handleCart }) => {
           <span className="pe-1"> Color: {color} </span>
         </div>
         <div>
-          <button onClick={() => handleCart(id)} className="rentBtn">
+          <button onClick={() => handleCart(id, name)} className="rentBtn">
             Add to Rent
           </button>
         </div>

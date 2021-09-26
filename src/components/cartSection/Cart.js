@@ -4,6 +4,7 @@ const Cart = ({ filteredCar }) => {
   const arrayUniqueByKey = [
     ...new Map(filteredCar.map((item) => [item["id"], item])).values(),
   ];
+  // const arrayUniqueByKey = filteredCar;
 
   const totalCost = arrayUniqueByKey.reduce((total, currentCar) => {
     return total + currentCar.cost;
