@@ -22,7 +22,7 @@ const Header = () => {
                 </h5>
               </div>
               <div className="col-3 pt-5">
-                <p>Total Amount = 1000000</p>
+                <p>Max Amount = 1000000</p>
               </div>
             </div>
           </div>

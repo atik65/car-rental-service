@@ -1,11 +1,11 @@
 import React from "react";
 import "./cart.css";
 const Cart = ({ filteredCar }) => {
-  // const arrayUniqueByKey = [
-  //   ...new Map(filteredCar.map((item) => [item["id"], item])).values(),
-  // ];
+  const arrayUniqueByKey = [
+    ...new Map(filteredCar.map((item) => [item["id"], item])).values(),
+  ];
 
-  const totalCost = filteredCar.reduce((total, currentCar) => {
+  const totalCost = arrayUniqueByKey.reduce((total, currentCar) => {
     return total + currentCar.cost;
   }, 0);
 
@@ -19,7 +19,7 @@ const Cart = ({ filteredCar }) => {
           <tbody>
             <tr>
               <th scope="row"> Car Selected :</th>
-              <td> {filteredCar.length} </td>
+              <td> {arrayUniqueByKey.length} </td>
             </tr>
             <tr>
               <th scope="row">Total Amount :</th>
@@ -28,8 +28,8 @@ const Cart = ({ filteredCar }) => {
           </tbody>
         </table>
 
-        <p className="mt-4 fw-bold">Seleced cars--</p>
-        {filteredCar.map((car, index) => {
+        <p className="mt-4 fw-bold">Selected cars--</p>
+        {arrayUniqueByKey.map((car, index) => {
           return (
             <div className="row" key={index}>
               <div className="col-6 d-flex align-items-center">
